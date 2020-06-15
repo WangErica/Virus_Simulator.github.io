@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <title>Survey</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+              margin-top:5px;
+            }
+
+            li {
+              float: left;
+            }
+
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+
+            .active {
+              background-color: #4CAF50;
+            }
+
+            .container {
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom:10px;
+                padding-left: 25px;
+                padding-right: 25px;
+                width:970px;
+            }
+
+            label {
+                display:inline-block;
+                font-size:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><a href="home.html"><img src="https://www.trophyman.com/assets/images/stay%206.png" alt="logo" style="width:100px;height:100px;"></a></center>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Virus Simulator</a></li>
+          <li><a href="survey.html">Survey</a></li>
+          <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+
+        <div class="container">
+        <center><form action="https://docs.google.com/forms/d/e/1FAIpQLScb-XK4BHCUQHLXfH4Z3jdEAt7Qcj1zurLCzAiY1nl7pfAPvA/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+    <fieldset>
+        <h2>Tell us about your experience!<br><small>This is only a simple survey about your experience with the current events happening.</small></h2>
+    </fieldset>
+    <fieldset>
+        <label for="">Email:</label>
+        <div class="form-group">
+            <input id="emailAddress" type="email" name="emailAddress" class="form-control" required>
+            </div>
+    </fieldset>
+
+
+    <!-- Field type: "short" id: "52388792" -->
+    <fieldset>
+        <legend for="52388792">Full Name</legend>
+        <center><div class="form-group">
+            <input id="916396805" type="text" name="entry.916396805" class="form-control" required>
+        </div></center>
+    </fieldset>
+
+
+    <!-- Field type: "choices" id: "635858381" -->
+    <fieldset>
+        <legend for="635858381">How are you doing today?</legend>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.964911900" value="Horrible😰" required>
+                    Horrible😰
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.964911900" value="So-so😐" required>
+                    So-so😐
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.964911900" value="Good😀" required>
+                    Good😀
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.964911900" value="Wonderful😆😆" required>
+                    Wonderful😆😆
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.964911900" value="__other_option__" required>
+                </label>
+                <input type="text" name="entry.964911900.other_option_response" placeholder="Other">
+            </div>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "linear" id: "1728132864" -->
+    <fieldset>
+        <legend for="1728132864">How is remote learning doing for you?</legend>
+        <div class="form-group">
+            <div>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="1" required>
+                1
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="2" required>
+                2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="3" required>
+                3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="4" required>
+                4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="5" required>
+                5
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="6" required>
+                6
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="7" required>
+                7
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="8" required>
+                8
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="9" required>
+                9
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.475441933" value="10" required>
+                10
+            </label>
+            </div>
+            <div>
+                <div>1: Horrible</div>
+                <div>10: Better than I thought!</div>
+            </div>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "linear" id: "889887081" -->
+    <fieldset>
+        <legend for="889887081">How is your COVID-19 experience?</legend>
+        <div class="form-group">
+            <div>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="1" required>
+                1
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="2" required>
+                2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="3" required>
+                3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="4" required>
+                4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="5" required>
+                5
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="6" required>
+                6
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="7" required>
+                7
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="8" required>
+                8
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="9" required>
+                9
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="entry.1131384059" value="10" required>
+                10
+            </label>
+            </div>
+            <div>
+                <div>1: Terrifying</div>
+                <div>10: Relaxed</div>
+            </div>
+        </div>
+    </fieldset>
+
+        <fieldset>
+        <legend for="117281671">What do you want to eat most right now?</legend>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="entry.1435390834" value="Pizza" required>
+                    Pizza
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="entry.1435390834" value="Korean BBQ" required>
+                    Korean BBQ
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="entry.1435390834" value="Fried Chicken" required>
+                    Fried Chicken
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="entry.1435390834" value="School Lunch" required>
+                    School Lunch
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="entry.1435390834" value="__other_option__" required>
+                </label>
+                <input type="text" name="entry.1435390834.other_option_response" placeholder="Other Food">
+            </div>
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="1049636592677644136">
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form></center>
+</div>
+
+<script>$('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            alert('Form Submitted. Thanks.')
+            // You can also redirect the user to a custom thank-you page:
+            // window.location = 'http://www.mydomain.com/thankyoupage.html'
+        }
+    })
+})
+</script>
+    </body>
+</html>
