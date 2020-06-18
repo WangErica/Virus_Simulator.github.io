@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,7 +20,6 @@
               padding: 0;
               overflow: hidden;
               background-color: #333;
-              margin-top:5px;
             }
 
             li {
@@ -39,27 +39,155 @@
             }
 
             .active {
-              background-color: #4CAF50;
+              background-color: #5390d9;
             }
 
-            .container {
-                margin-right: auto;
-                margin-left: auto;
-                margin-bottom:10px;
-                padding-left: 25px;
-                padding-right: 25px;
-                width:970px;
+            body, html {
+              height: 100%;
+              margin: 0;
             }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            .bg {
+              /* The image used */
+              background-image: url("https://i.pinimg.com/originals/7f/bf/d2/7fbfd29e441b45b6e95cbbe5b719ba84.jpg");
+
+                filter: blur(1px);
+              -webkit-filter: blur(0.5px);
+
+              /* Full height */
+              height: 60%;
+              width:100%;
+
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+
+            .bg-text {
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+              color: white;
+              font-weight: bold;
+              border: 3px solid #f1f1f1;
+              position: absolute;
+              top: 35%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 2;
+              width: 35%;
+              height:25%;
+              text-align: center;
+            }
+        </style>
+
+        <style>
+        .column {
+          width: 33%;
+          margin-bottom: 16px;
+          padding:10px;
+        }
+
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+          padding: 0 10px;
+        }
+
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        .title {
+          color: grey;
+        }
+
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 470px;
+        }
+
+        .button:hover {
+          background-color: #555;
+        }
         </style>
     </head>
 
     <body>
-        <center><a href="home.html"><img src="https://www.theheraldtimes.com/wp-content/uploads/2020/04/stayathome.png" alt="logo" style="width:120px;height:120px;"></a></center>
 
         <ul>
           <li><a href="home.html">Home</a></li>
           <li><a href="index.html">Virus Simulator</a></li>
           <li><a href="survey.html">Survey</a></li>
-          <li style="float:right"><a class="active" href="#about">About</a></li>
+          <li style="float:right"><a class="active" href="about.html">Need Help?</a></li>
         </ul>
+
+        <div class="bg"></div>
+        <div class="bg-text">
+          <h2>In a time like this,</h2>
+          <h1 style="font-size:50px">Stay Safe</h1>
+          <p style="font-size:15px">Don't be reckless! Stay at home and relax.</p>
+        </div>
+
+
+        <br>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <center><img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/99769740/original/c05e672693062a198e2329f2e4d993c1d20bafb0/youtube-banner-and-logo.png" alt="Youtube" style="width:250px; height:250px"></center>
+              <div class="container">
+                <h2>Youtube</h2>
+                <p class="title">Online Video-Sharing Platform</p>
+                <p>You can use this platform to share your thoughts and experience with others.</p>
+                <p>You can also look at other people's experiences or just to watch some TV.</p>
+                <p><a href="https://www.youtube.com"><button class="button">Watch Youtube Now!</button></a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <center><img src="https://lh3.googleusercontent.com/proxy/acm9anYPefQd5MhLZ5SLHe0w2o-8yY7wXiCT5jI5LF9W_Ukrz-PjlG16rYhm5olr-jpfhsUKplN1-Ds_7wrsVXZ5l42dJapImEjwrblzxe0AAjbVP0LERI1QMqAmeu67TTqony6hHu8Rx4PVurLDUL2zTVKe" alt="Instagram" style="width:250px; height:250px"></center>
+              <div class="container">
+                <h2>Instagram</h2>
+                <p class="title">Social Networking Platform</p>
+                <p>A place to share your stories of home adventures and more.</p>
+                <p>You can also share your moments on this social media.</p>
+                <p><a href="https://www.instagram.com/?hl=en"><button class="button">Check Out People's Stories!</button></a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <center><img src="https://images-na.ssl-images-amazon.com/images/I/21b75LgSdFL.png" alt="Wattpad" style="width:250px; height:250px"></center>
+              <div class="container">
+                <h2>Wattpad</h2>
+                <p class="title">Read and Write Platform</p>
+                <p>Read other people's creation, comment, like and share.</p>
+                <p>For those who write, you can do it here however you like.</p>
+                <p><a href="https://www.wattpad.com/"><button class="button">Read Stories!</button></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
     </body>
+</html>

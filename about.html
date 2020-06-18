@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <title>Homepage</title>
+
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+              margin-top:5px;
+            }
+
+            li {
+              float: left;
+            }
+
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+
+            .active {
+              background-color: #5390d9;
+            }
+
+            .container {
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom:10px;
+                padding-left: 25px;
+                padding-right: 25px;
+                width:970px;
+            }
+        </style>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+
+        input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+        /* Style the container/contact section */
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+          padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+
+        #result {
+          font-size: 25px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <center><a href="home.html"><img src="https://seeklogo.com/images/S/stay-home-logo-91F79A5C20-seeklogo.com.png" alt="logo" style="width:180px;height:90px;"></a></center>
+
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Virus Simulator</a></li>
+          <li><a href="survey.html">Survey</a></li>
+          <li style="float:right"><a class="active" href="about.html">Need Help?</a></li>
+        </ul>
+
+        <div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Get information about COVID-19 in your state.</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://www.grmag.com/wp-content/uploads/sites/113/2020/03/20200324-DJI_0966-scaled.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your First Name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+        <label for="state">State</label>
+        <select id="state" name="state">
+          <option value="select your state">Select your state..</option>
+          <option value="alabama">Alabama</option>
+          <option value="alaska">Alaska</option>
+          <option value="arizona">Arizona</option>
+          <option value="arkansas">Arkansas</option>
+          <option value="california">California</option>
+          <option value="colorado">Colorado</option>
+          <option value="connecticut">Connecticut</option>
+          <option value="delaware">Delaware</option>
+          <option value="florida">Florida</option>
+          <option value="georgia">Georgia</option>
+          <option value="hawaii">Hawaii</option>
+          <option value="idaho">Idaho</option>
+          <option value="illinois">Illinois</option>
+          <option value="indiana">Indiana</option>
+          <option value="iowa">Iowa</option>
+          <option value="kansas">Kansas</option>
+          <option value="kentucky">Kentucky</option>
+          <option value="louisiana">Louisiana</option>
+          <option value="maine">Maine</option>
+          <option value="maryland">Maryland</option>
+          <option value="massachusetts">Massachusetts</option>
+          <option value="michigan">Michigan</option>
+          <option value="minnesota">Minnesota</option>
+          <option value="mississippi">Mississippi</option>
+          <option value="missouri">Missouri</option>
+          <option value="montana">Montana</option>
+          <option value="nebraska">Nebraska</option>
+          <option value="nevada">Nevada</option>
+          <option value="new hampshire">New Hampshire</option>
+          <option value="new jersey">New Jersey</option>
+          <option value="new mexico">New Mexico</option>
+          <option value="new york">New York</option>
+          <option value="north carolina">North Carolina</option>
+          <option value="north dakota">North Dakota</option>
+          <option value="ohio">Ohio</option>
+          <option value="oklahoma">Oklahoma</option>
+          <option value="oregon">Oregon</option>
+          <option value="pennslyvania">Pennslyvania</option>
+          <option value="rhode island">Rhode Island</option>
+          <option value="south carolina">South Carolina</option>
+          <option value="south dakota">South Dakota</option>
+          <option value="tennessee">Tennessee</option>
+          <option value="texas">Texas</option>
+          <option value="utah">Utah</option>
+          <option value="vermont">Vermont</option>
+          <option value="virginia">Virginia</option>
+          <option value="washington">Washington</option>
+          <option value="west virginia">West Virginia</option>
+          <option value="wisconsin">Wisconsin</option>
+          <option value="wyoming">Wyoming</option>
+        </select>
+        <button onclick="convert();" class="btn btn-secondary" type= "button">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<center><div class="mt-5" id="result"></div></center>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script>
+
+    let input = document.querySelector("#state");
+
+    function convert(){
+      if (input.value == "select your state"){
+        alert("Please choose a state.")
+        return;
+      }
+
+      if (input.value == "alabama"){
+        document.getElementById("result").innerHTML = "Text 'ALALERT' to 888-777 or text 'MGMSAFE' to 888-777, if you are in Montgomery."
+      }
+
+      if (input.value == "alaska"){
+        document.getElementById("result").innerHTML = "Dial 211 or 1-800-478-2221. Available 7am-8pm, 7 days a week."
+      }
+
+      if (input.value == "arizona"){
+        document.getElementById("result").innerHTML = "Dial 211 or 1-877-211-8661. Go to the website '211Arizona.org' or download the 211 Arizona app."
+      }
+
+      if (input.value == "arkansas"){
+        document.getElementById("result").innerHTML = "Text 'COVID19ARK' to 67283, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "california"){
+        document.getElementById("result").innerHTML = "Text COSD COVID19 to 468-311, if you are located in San Diego. Text OCCOVID19 to 888777, if you are located in Orange County."
+      }
+
+      if (input.value == "colorado"){
+        document.getElementById("result").innerHTML = "Text your ZIP CODE to 898-211, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "connecticut"){
+        document.getElementById("result").innerHTML = "Download the CTPrepares mobile app or the CTSafe mobile app."
+      }
+
+      if (input.value == "delaware"){
+        document.getElementById("result").innerHTML = "Text your ZIP code to 898-211, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "florida"){
+        document.getElementById("result").innerHTML = "Text FLCOVID19 to 888-777, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "georgia"){
+        document.getElementById("result").innerHTML = "Download the PunchAlert App to receive instant updates."
+      }
+
+      if (input.value == "hawaii"){
+        document.getElementById("result").innerHTML = "Call 211 or Text 877-275-6569 from 7am-10pm."
+      }
+
+      if (input.value == "idaho"){
+        document.getElementById("result").innerHTML = "Call 888-330-3010 for related information."
+      }
+
+      if (input.value == "illinois"){
+        document.getElementById("result").innerHTML = "Text 'COVID' to 312-500-3836, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "indiana"){
+        document.getElementById("result").innerHTML = "Call 877-826-0011, available from 8am to 5pm daily."
+      }
+
+      if (input.value == "iowa"){
+        document.getElementById("result").innerHTML = "Call 800-332-0419."
+      }
+
+      if (input.value == "kansas"){
+        document.getElementById("result").innerHTML = "Call 211 or 911."
+      }
+
+      if (input.value == "kentucky"){
+        document.getElementById("result").innerHTML = "Call 800-722-5725 or text 606-288-1737 to receive updates."
+      }
+
+      if (input.value == "louisiana"){
+        document.getElementById("result").innerHTML = "Text 'LACOVID' to 67283 or download the Smart911 app."
+      }
+
+      if (input.value == "maine"){
+        document.getElementById("result").innerHTML = "For information on COVID-19, go to 'https://www.maine.gov/portal/CAS/'."
+      }
+
+      if (input.value == "maryland"){
+        document.getElementById("result").innerHTML = "Text 'MdReady' to 898-211 to receive updates."
+      }
+
+      if (input.value == "massachusetts"){
+        document.getElementById("result").innerHTML = "Text 'COVIDMA' to 888-777 to receive updates."
+      }
+
+      if (input.value == "michigan"){
+        document.getElementById("result").innerHTML = "Text (517) 200-3045 to sign up for daily updates."
+      }
+
+      if (input.value == "minnesota"){
+        document.getElementById("result").innerHTML = "Sign up for IPAWS."
+      }
+
+      if (input.value == "mississippi"){
+        document.getElementById("result").innerHTML = "Text COVID to 601-633-2220 to receive updates."
+      }
+
+      if (input.value == "missouri"){
+        document.getElementById("result").innerHTML = "Call 800-392-0272 for more information."
+      }
+
+      if (input.value == "montana"){
+        document.getElementById("result").innerHTML = "Call 888-333-0461 for more information"
+      }
+
+      if (input.value == "nebraska"){
+        document.getElementById("result").innerHTML = "Call 402-552-6645 from 8am to 8pm daily."
+      }
+
+      if (input.value == "nevada"){
+        document.getElementById("result").innerHTML = "Call 211 for help."
+      }
+
+      if (input.value == "new hampshire"){
+        document.getElementById("result").innerHTML = "Call 866-444-4211 for more information."
+      }
+
+      if (input.value == "new jersey"){
+        document.getElementById("result").innerHTML = "Text 'NJCOVID' to 898-211 for receive updates, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "new mexico"){
+        document.getElementById("result").innerHTML = "Go to 'www.nmhealth.org/news/alert/' for daily updates."
+      }
+
+      if (input.value == "new york"){
+        document.getElementById("result").innerHTML = "Text 'COVID' to 692-692 to receive updates, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "north carolina"){
+        document.getElementById("result").innerHTML = "Call 888-892-1162 for more information."
+      }
+
+      if (input.value == "north dakota"){
+        document.getElementById("result").innerHTML = "Go to 'www.health.nd.gov/epr/han/health-alerts/' for updates."
+      }
+
+      if (input.value == "ohio"){
+        document.getElementById("result").innerHTML = "Send a text to 216-279-7784 to receive updates."
+      }
+
+      if (input.value == "oklahoma"){
+        document.getElementById("result").innerHTML = "Text 'ADD' to 405-920-3022 to receive updates, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "oregon"){
+        document.getElementById("result").innerHTML = "Text 503-782-5730 to sign up for daily updates, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "pennslyvania"){
+        document.getElementById("result").innerHTML = "Text PennLive to 717-745-7532 to receive updates."
+      }
+
+      if (input.value == "rhode island"){
+        document.getElementById("result").innerHTML = "Call 401-222-8022 for more information."
+      }
+
+      if (input.value == "south carolina"){
+        document.getElementById("result").innerHTML = "Call 855-472-3432 between 8 a.m. and 6 p.m. daily."
+      }
+
+      if (input.value == "south dakota"){
+        document.getElementById("result").innerHTML = "Call 800-997-2880 for updates and more information."
+      }
+
+      if (input.value == "tennessee"){
+        document.getElementById("result").innerHTML = "Download the ReadyTN app for daily updates."
+      }
+
+      if (input.value == "texas"){
+        document.getElementById("result").innerHTML = "Call 512-974-2000 for more information."
+      }
+
+      if (input.value == "utah"){
+        document.getElementById("result").innerHTML = "Go to 'entry.utah.gov.' for more information."
+      }
+
+      if (input.value == "vermont"){
+        document.getElementById("result").innerHTML = "Download the Everbridge app for daily updates."
+      }
+
+      if (input.value == "virginia"){
+        document.getElementById("result").innerHTML = "Download the Everbridge app for daily updates."
+      }
+
+      if (input.value == "washington"){
+        document.getElementById("result").innerHTML = "Text 'Coronavirus' to 211-211 to receive updates, text 'STOP' to opt-out of receiving messages."
+      }
+
+      if (input.value == "west virginia"){
+        document.getElementById("result").innerHTML = "Call 800-887-4304 for more information."
+      }
+
+      if (input.value == "wisconsin"){
+        document.getElementById("result").innerHTML = "Go to 'www.wisconsin.gov' for more information."
+      }
+
+      if (input.value == "wyoming"){
+        document.getElementById("result").innerHTML = "Text 'TETON_WY' to 888-777, text 'STOP' to opt-out of receiving messages."
+      }
+
+    }
+  </script>
+
+    </body>
+
+</html>
